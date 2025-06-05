@@ -15,6 +15,11 @@ key features:
     exit: users can exit the application gracefully
 
 - database sql
+    what is database? -> collection of data stored in a format that can easily be accessed
+
+    we use DMBS have 2: relational (each table store data a specific type of object and we use sql) and no relational (no table or relationship between table and dont understand sql)
+
+    - create a database
 
 
 # week 1:
