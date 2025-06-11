@@ -44,6 +44,9 @@ key features:
         }
 
 
+      - Service Lyaer = business logic of the application. while the controller manage HTTP request and response, the repo layer handle data access, it coordinate the application operation ensure that business rules are applied consistently
+
+
     - what is spring boot:
 
     - setting up spring boot with spring initializr
