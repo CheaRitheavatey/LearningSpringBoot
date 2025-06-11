@@ -24,6 +24,26 @@ key features:
 
 # week 1:
 - intro to spring boot:
+    - controller classs = responsible for handling incoming HTTP request and give back response
+      example, take request from web or mobile app and return json
+    - @RestController = combine 2 things (@Controller: mark which class is controller + @ResponseBody: the return value should be written directly in HTTP usually as json)
+    - So, when you use @RestController, you don't need to annotate each method with @ResponseBody; it's applied automatically.
+    - @RequestMapping: map HTTP requests to handler methods of MVC and REST controllers
+      can be applied at both the class and method levels
+      Flexibility: You can specify the HTTP method (GET, POST, etc.), request parameters, headers, and more.
+      example, @RequestMapping("/api/products") --> from localhost:8080 to localhost:8080/api/products
+                public class ProductController {
+                    // Methods to handle requests
+                }
+
+    - @GetMapping = is a shortcut for @RequestMapping(method = RequestMethod.GET)
+      used to handle HTTP GET requests
+      @GetMapping("/{id}") -->  it mean: /api/products/{id} and return returns a Product object
+        public Product getProduct(@PathVariable Long id) {
+            return productService.getProductById(id);
+        }
+
+
     - what is spring boot:
 
     - setting up spring boot with spring initializr
